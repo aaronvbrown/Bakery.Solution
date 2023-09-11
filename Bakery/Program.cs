@@ -19,9 +19,9 @@ namespace Bakery
     static void ConfirmOrEditBreadQty(BreadOrder breadOrd)
     {
       Console.WriteLine("Confirm bread order quantity:");
-      Console.WriteLine($"Side 1 has a length of {tri.Side1}.");
-      Console.WriteLIne($"You requested {breadOrd.BreadQuantity}");
-      Console.WriteLIne("Is that right?  Type 'yes' to confirm or 'no' to re-enter the bread order quantity.")
+      // Console.WriteLIne($"You requested {breadOrd.BreadQuantity}");
+      Console.WriteLine("Confirm bread order quantity:");
+      // Console.WriteLIne("Is that right?  Type 'yes' to confirm or 'no' to re-enter the bread order quantity.");
     }
   }
 }
