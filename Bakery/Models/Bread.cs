@@ -7,19 +7,16 @@ namespace Bakery.Models
   {
     public int BreadQuantity {get; set;}
 
+    
+    //constructor
     public BreadOrder(int breadQty) 
     {
       BreadQuantity = breadQty;
     }
 
-    // public SetBreadQuantity(int breadQty)
-    // {
-    //   BreadQuantity = breadQty;
-    // }
-    
-    // public decimal GetAmount()
-    // {
-    //   return BreadQuantity * 5
-    // }
+    public decimal GetAmount()
+    {
+      return BreadQuantity * 5;
+    }
   }
 }

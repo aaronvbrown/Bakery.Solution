@@ -19,9 +19,18 @@ namespace Bakery
     static void ConfirmOrEditBreadQty(BreadOrder breadOrd)
     {
       Console.WriteLine("Confirm bread order quantity:");
-      // Console.WriteLIne($"You requested {breadOrd.BreadQuantity}");
-      Console.WriteLine("Confirm bread order quantity:");
-      // Console.WriteLIne("Is that right?  Type 'yes' to confirm or 'no' to re-enter the bread order quantity.");
+      Console.WriteLine($"You requested {breadOrd.BreadQuantity}");
+      Console.WriteLine("Is that right?  Type 'yes' to confirm or 'no' to re-enter the bread order quantity.");
+      string userResponse = Console.ReadLine();
+      if (userResponse == "Yes" || userResponse == "yes")
+      {
+        Console.WriteLine($"You requested {breadOrd.BreadQuantity}");
+        Console.WriteLine($"Great!  Your bread order total is {breadOrd.GetAmount()}");
+      }
+      else
+      {
+        Main();
+      }
     }
   }
 }
