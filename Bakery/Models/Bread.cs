@@ -16,7 +16,7 @@ namespace Bakery.Models
 
     public decimal GetAmount()
     {
-      return BreadQuantity * 5;
+      return (BreadQuantity - BreadQuantity/3) * 5;
     }
   }
-}
+}git 

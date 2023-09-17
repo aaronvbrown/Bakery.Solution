@@ -25,7 +25,7 @@ namespace Bakery
       if (userResponse == "Yes" || userResponse == "yes")
       {
         Console.WriteLine($"You requested {breadOrd.BreadQuantity}");
-        Console.WriteLine($"Great!  Your bread order total is {breadOrd.GetAmount()}");
+        Console.WriteLine($"Great!  Your bread order total is ${breadOrd.GetAmount()}");
       }
       else
       {
