@@ -12,11 +12,13 @@ namespace Bakery.Tests
       BreadOrder newBreadOrd = new BreadOrder(4);
       Assert.AreEqual(typeof(BreadOrder), newBreadOrd.GetType());
     }
+
+    [TestMethod]
+    public void GetAmount_ReturnsAmount_Decimal()
+    {
+      BreadOrder newBreadOrd = new BreadOrder(10);
+      decimal TestAmount = 35;
+      Assert.AreEqual(TestAmount, newBreadOrd.GetAmount());
+    }
   }
-  // [TestMethod]
-  // public void GetAmount_ReturnsAmount_Decimal()
-  // {
-  //   BreadOrder newBreadOrder = new BreadOrder(4);
-  //   Assert.AreEqual(typeof(decimal), newBreadOrder.GetAmount());
-  // }
 }
