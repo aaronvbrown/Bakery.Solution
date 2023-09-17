@@ -9,8 +9,14 @@ namespace Bakery.Tests
     [TestMethod]
     public void BreadOrderConstructor_CreatesInstanceOfBreadOrder_BreadOrder()
     {
-      BreadOrder newBreadOrder = new BreadOrder();
-      Assert.AreEqual(typeof(BreadOrder), newBreadOrder.GetType());
+      BreadOrder newBreadOrd = new BreadOrder(4);
+      Assert.AreEqual(typeof(BreadOrder), newBreadOrd.GetType());
     }
   }
+  // [TestMethod]
+  // public void GetAmount_ReturnsAmount_Decimal()
+  // {
+  //   BreadOrder newBreadOrder = new BreadOrder(4);
+  //   Assert.AreEqual(typeof(decimal), newBreadOrder.GetAmount());
+  // }
 }
