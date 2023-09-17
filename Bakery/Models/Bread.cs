@@ -19,4 +19,4 @@ namespace Bakery.Models
       return (BreadQuantity - BreadQuantity/3) * 5;
     }
   }
-}git 
+}
